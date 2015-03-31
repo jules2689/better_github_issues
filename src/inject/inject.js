@@ -12,6 +12,13 @@ chrome.extension.sendMessage({}, function(response) {
 						assignee = assignee.parent()[0];
 						var wrapped = $("<small>").html(assignee);
 						$(issue).after("&nbsp;(" + wrapped.html() + ")");
+					} else {
+						var author = html.find("#partial-discussion-header .author");
+						if (author.length > 0) {
+							author = author[0];
+							var wrapped = $("<small>").html(author);
+							$(issue).after("&nbsp;(Pull Request by " + wrapped.html() + ")");
+						}
 					}
 				});
 			});
