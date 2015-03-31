@@ -1,7 +1,7 @@
 {
   "name": "Better Github Issues",
-  "version": "0.0.2",
-  "manifest_version": 3,
+  "version": "0.0.3",
+  "manifest_version": 4,
   "description": "Adds the assigned person's name and avatar to issue links on Github",
   "homepage_url": "http://extensionizr.com",
   "icons": {

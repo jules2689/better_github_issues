@@ -12,7 +12,7 @@ chrome.extension.sendMessage({}, function(response) {
 						assignee = assignee.parent()[0];
 						var wrapped = $("<small>").html(assignee);
 						$(issue).after("&nbsp;(" + wrapped.html() + ")");
-					} else {
+					} else if (issue.href.indexOf("pull") != -1) {
 						var author = html.find("#partial-discussion-header .author");
 						if (author.length > 0) {
 							author = author[0];
