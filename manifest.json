@@ -1,0 +1,22 @@
+{
+  "name": "Better Github Issues",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Adds the assigned person's name and avatar to issue links on Github",
+  "homepage_url": "http://extensionizr.com",
+  "icons": {
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/*"
+      ],
+      "js": [
+        "js/jquery/jquery.min.js",
+        "src/inject/inject.js"
+      ]
+    }
+  ]
+}
